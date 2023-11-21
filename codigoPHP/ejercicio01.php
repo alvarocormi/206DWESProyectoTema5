@@ -35,8 +35,7 @@ require_once("./header.php");
      * 
      */
 
-    
-
+     
     /**
      * @link https://www.php.net/manual/en/reserved.variables.server
      * 

@@ -87,6 +87,19 @@ require_once("./codigoPHP/header.php");
                     <a href="./mostrarCodigo/muestraEjercicio01.php" class="text-white text-decoration-none">mostrar</a>
                 </td>
             </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>
+                    Desarrollo de un control de acceso con identificación del usuario basado en la función header() con PDO.
+
+                </td>
+                <td>
+                    <a href="./codigoPHP/ejercicio02.php" class="text-white text-decoration-none">ejecutar</a>
+                </td>
+                <td>
+                    <a href="./mostrarCodigo/muestraEjercicio02.php" class="text-white text-decoration-none">mostrar</a>
+                </td>
+            </tr>
         </tbody>
     </table>
 </div>
