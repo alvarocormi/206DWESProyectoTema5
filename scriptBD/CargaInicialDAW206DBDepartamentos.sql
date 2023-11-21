@@ -5,15 +5,18 @@
 */
 START TRANSACTION;
 -- Usamos la base de datos de Departamento
-USE DB206DWESProyectoTema4;
+USE DB206DWESProyectoTema5;
 -- Inserción de datos en la tabla Departamento.
-INSERT INTO T02_Departamento (T02_CodDepartamento, T02_FechaCreacionDepartamento, T02_DescDepartamento, T02_VolumenNegocio, T02_FechaBajaDepartamento)
-VALUES ('001', CURDATE(), 'Departamento de Ventas', 500000.0, NULL);
-INSERT INTO T02_Departamento (T02_CodDepartamento, T02_FechaCreacionDepartamento, T02_DescDepartamento, T02_VolumenNegocio, T02_FechaBajaDepartamento)
-VALUES ('002',CURDATE(), 'Departamento de Marketing', 300000.0, NULL);
-INSERT INTO T02_Departamento (T02_CodDepartamento, T02_FechaCreacionDepartamento, T02_DescDepartamento, T02_VolumenNegocio, T02_FechaBajaDepartamento)
-VALUES ('003', CURDATE(), 'Departamento de Recursos Humanos', 250000.0, NULL);
-INSERT INTO T02_Departamento (T02_CodDepartamento, T02_FechaCreacionDepartamento, T02_DescDepartamento, T02_VolumenNegocio, T02_FechaBajaDepartamento)
-VALUES ('004', CURDATE(), 'Departamento de Desarrollo', 400000.0, NULL);
+INSERT INTO T02_Departamento (T02_CodDepartamento, T02_DescDepartamento, T02_FechaCreacionDepartamento, T02_VolumenDeNegocio, T02_FechaBajaDepartamento)
+VALUES ('001', 'Departamento 1', CURDATE(), 1000000.00, NULL);
+INSERT INTO T02_Departamento (T02_CodDepartamento, T02_DescDepartamento, T02_FechaCreacionDepartamento, T02_VolumenDeNegocio, T02_FechaBajaDepartamento)
+VALUES ('002', 'Departamento 2', CURDATE(), 750000.50, NULL);
+
+INSERT INTO T02_Departamento (T02_CodDepartamento, T02_DescDepartamento, T02_FechaCreacionDepartamento, T02_VolumenDeNegocio, T02_FechaBajaDepartamento)
+VALUES ('003', 'Departamento 3', CURDATE(), 500000.75, NULL);
+
+INSERT INTO T02_Departamento (T02_CodDepartamento, T02_DescDepartamento, T02_FechaCreacionDepartamento, T02_VolumenDeNegocio, T02_FechaBajaDepartamento)
+VALUES ('005', 'Departamento 5', CURDATE(), -50000.75, NULL);
+
 
 COMMIT;
