@@ -75,6 +75,19 @@ require_once("./codigoPHP/header.php");
         </thead>
         <tbody>
             <tr>
+                <th scope="row">0</th>
+                <td>
+                    Mostrar el contenido de las variables globales y phpinfo()
+
+                </td>
+                <td>
+                    <a href="./codigoPHP/ejercicio00.php" class="text-white text-decoration-none">ejecutar</a>
+                </td>
+                <td>
+                    <a href="./mostrarCodigo/muestraEjercicio00.php" class="text-white text-decoration-none">mostrar</a>
+                </td>
+            </tr>
+            <tr>
                 <th scope="row">1</th>
                 <td>
                     Desarrollo de un control de acceso con identificación del usuario basado en la función header().

@@ -31,7 +31,7 @@ require_once("./header.php");
      * @copyright Todos los derechos reservados Alvaro Cordero
      * 
      * @Annotation Desarrollo de un control de acceso con identificación del usuario basado en la función header() y
-     en el uso de una tabla “Usuario” de la base de datos. (PDO).
+     * en el uso de una tabla “Usuario” de la base de datos. (PDO).
      * 
      */
 
@@ -84,7 +84,7 @@ require_once("./header.php");
         try {
             /**
              * Establecimiento de la conexion
-                /*
+            /*
                 Instanciamos un objeto PDO y establecemos la conexión
                 Construccion de la cadena PDO: (ej. 'mysql:host=localhost; dbname=midb')
                 host – nombre o dirección IP del servidor
