@@ -13,7 +13,7 @@ use DB206DWESProyectoTema5;
 /*Creacion de la tabla Usuario*/
 create table if not exists T01_Usuario(
 T01_CodUsuario varchar(8) primary key,
-T01_Password varchar(64),
+T01_Password varchar(8),
 T01_DescUsuario varchar (255),
 T01_NumConexiones int default 1,
 T01_FechaHoraUltimaConexion datetime default CURRENT_TIMESTAMP,
@@ -32,8 +32,4 @@ T02_FechaBajaDepartamento datetime default null)engine=innodb;
 /*Creacion del usuario*/
 create user 'user206DWESProyectoTema5'@'%' identified by 'P@ssw0rd';
 grant all privileges on DB206DWESProyectoTema5.* to 'user206DWESProyectoTema5'@'%';
-
-/*Creacion del usuario de 1&1 o IONOS*/
-create user 'user1&1DAW206'@'%' identified by 'P@ssw0rd';
-grant all privileges on DB204DWESProyectoTema5.* to 'user1&1DAW206'@'%';
 

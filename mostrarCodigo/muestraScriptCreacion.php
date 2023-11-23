@@ -1,3 +1,3 @@
 <?php
-	highlight_file('../scriptBD/CreaDB206DWESProyectoTema5.sql');
+	highlight_file('../scriptBD/CreaDAW206DBDepartamentos.sql');
 ?>

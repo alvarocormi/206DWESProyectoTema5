@@ -24,8 +24,28 @@ require_once("./codigoPHP/header.php");
     <table class="table table-striped table-secondary table-bordered m-auto" style="width: 55%;">
         <thead>
             <tr>
+                <th scope="col">Configuracion de la base de datos</th>
+                <th scope="col">Mostrar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Fichero de configuracion de la base de datos</th>
+
+                <td>
+                    <a href="./mostrarCodigo/muestraConfDB.php" class="text-white text-decoration-none">muestra</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="mt-4" style="width: 100%">
+    <table class="table table-striped table-secondary table-bordered m-auto" style="width: 55%;">
+        <thead>
+            <tr>
                 <th scope="col">#</th>
                 <th scope="col">Enunciado</th>
+                <th scope="col">Mostrar</th>
                 <th scope="col">Ejecutar</th>
             </tr>
         </thead>
@@ -36,8 +56,12 @@ require_once("./codigoPHP/header.php");
                     Script creación de base de datos y usuario.
 
                 </td>
+
                 <td>
                     <a href="./mostrarCodigo/muestraScriptCreacion.php" class="text-white text-decoration-none">muestra</a>
+                </td>
+                <td>
+                    <a href="./scriptBD/CreaDB207DWESProyectoTema5-1&1.php" class="text-white text-decoration-none">ejecutar</a>
                 </td>
             </tr>
             <tr>
@@ -49,6 +73,9 @@ require_once("./codigoPHP/header.php");
                 <td>
                     <a href="./mostrarCodigo/muestraScriptBorrar.php" class="text-white text-decoration-none">muestra</a>
                 </td>
+                <td>
+                    <a href="./scriptBD/BorraDB207DWESProyectoTema5-1&1.php" class="text-white text-decoration-none">ejecutar</a>
+                </td>
             </tr>
             <tr>
                 <th scope="row">Script Carga Inicial</th>
@@ -58,6 +85,9 @@ require_once("./codigoPHP/header.php");
                 </td>
                 <td>
                     <a href="./mostrarCodigo/muestraScriptCargaInicial.php" class="text-white text-decoration-none">muestra</a>
+                </td>
+                <td>
+                    <a href="./scriptBD/CargaInicialDB207DWESProyectoTema5-1&1.php" class="text-white text-decoration-none">ejecutar</a>
                 </td>
             </tr>
         </tbody>
@@ -74,19 +104,6 @@ require_once("./codigoPHP/header.php");
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th scope="row">0</th>
-                <td>
-                    Mostrar el contenido de las variables globales y phpinfo()
-
-                </td>
-                <td>
-                    <a href="./codigoPHP/ejercicio00.php" class="text-white text-decoration-none">ejecutar</a>
-                </td>
-                <td>
-                    <a href="./mostrarCodigo/muestraEjercicio00.php" class="text-white text-decoration-none">mostrar</a>
-                </td>
-            </tr>
             <tr>
                 <th scope="row">1</th>
                 <td>
