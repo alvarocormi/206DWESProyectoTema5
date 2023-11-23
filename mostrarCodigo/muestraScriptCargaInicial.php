@@ -1,3 +1,3 @@
 <?php
-	highlight_file('../scriptBD/CargaInicialDAW206DBDepartamentos.sql');
+	highlight_file('../scriptBD/CargaInicialDB206DWESProyectoTema5.sql');
 ?>
