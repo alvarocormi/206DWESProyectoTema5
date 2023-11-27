@@ -54,7 +54,7 @@ if (isset($_SESSION)) {
  * 
  * Mostramos el contenido e la variable $_SERVER
  */
-echo ("<p style='color: black;'>Contenido de <span>" . '$_SERVER' . "</span> es de tipo <span>" . gettype($_SERVER) . "</span> y tiene el valor " . print_r($_SERVER) . "</p>");
+echo ("<p style='color: black;'>Contenido de <span>" . '$_SERVER' . "</span> es de tipo <span>" . gettype($_SERVER) . "</span> y tiene el valor " . var_dump($_SERVER) . "</p>");
 
 /**
  * @link https://www.php.net/manual/es/reserved.variables.cookies.php

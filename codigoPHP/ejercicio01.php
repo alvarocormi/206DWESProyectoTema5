@@ -53,13 +53,17 @@ if (!isset($_SERVER['PHP_AUTH_USER']) && !isset($_SERVER['PHP_AUTH_PW']) || $_SE
     //Mostramos por pantalla los datos el usuario
 
     //Muestro un mensaje si todo ha ido bien.
-    echo "<p style='color: black;'>Usuario y password correctos!</p>";
+    echo "<p style='color: white;'>Usuario y password correctos!</p>";
 
     //Muestro el usuario
-    echo "<p style='color: black;'>Nombre de usuario: " . $_SERVER['PHP_AUTH_USER'] . "</p>";
+    echo "<p style='color: white;'>Nombre de usuario: " . $_SERVER['PHP_AUTH_USER'] . "</p>";
 
     //Muestro la password
-    echo "<p style='color: black;'>Password: " . $_SERVER['PHP_AUTH_PW'] . "</p>";
+    echo "<p style='color: white;'>Password: " . $_SERVER['PHP_AUTH_PW'] . "</p>";
+
+    //Volver al home
+    echo "<p style='color: white;'>Volver al home: <a href='../indexProyectoTema5.php'>Home</a></p>";
+
 }
 
 
@@ -71,21 +75,11 @@ require_once("./head.php");
 <!-- Iconos-->
 <link rel="shortcut icon" href="../../webroot/img/palma.png" type="image/x-icon" />
 
-<!--CSS-->
-<link rel="stylesheet" href="../webroot/css/main.css" />
-<link rel="stylesheet" href="../webroot/css/proyectoTema5.css" />
+
 
 <!-- TITLE -->
 <title>Ejercicio 01 PHP</title>
 
-<?php
-//Incluimos el header
-require_once("./header.php");
-?>
-
-<!-- CONTENIDO -->
-<h2>Ejercicio 01 PHP</h2>
-<p>CONTROL DE ACCESO MEDIANTE HEADER</p>
 
 
 </div>

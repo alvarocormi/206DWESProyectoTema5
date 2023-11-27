@@ -17,7 +17,7 @@ require_once("./codigoPHP/head.php");
 require_once("./codigoPHP/header.php");
 ?>
 
-<h2>APLICACIONES WEB USANDO CODIGO EMBEBIDO</h2>
+<h2>Aplicaciones Web Usando Codigo Embebido</h2>
 <p>IES LOS SAUCES - BENAVENTE</p>
 
 <div class="mt-4" style="width: 100%">
@@ -104,6 +104,19 @@ require_once("./codigoPHP/header.php");
             </tr>
         </thead>
         <tbody>
+            <tr>
+                <th scope="row">0</th>
+                <td>
+                    Mostrar las variables superGlobales
+
+                </td>
+                <td>
+                    <a href="./codigoPHP/ejercicio00.php" class="text-white text-decoration-none">ejecutar</a>
+                </td>
+                <td>
+                    <a href="./mostrarCodigo/muestraEjercicio00.php" class="text-white text-decoration-none">mostrar</a>
+                </td>
+            </tr>
             <tr>
                 <th scope="row">1</th>
                 <td>

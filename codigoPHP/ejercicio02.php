@@ -1,29 +1,4 @@
 <?php
-//Incluimos el head
-require_once("./head.php");
-?>
-<!-- Iconos-->
-<link rel="shortcut icon" href="../../webroot/img/palma.png" type="image/x-icon" />
-
-<!--CSS-->
-<link rel="stylesheet" href="../webroot/css/main.css" />
-<link rel="stylesheet" href="../webroot/css/proyectoTema5.css" />
-
-<!-- TITLE -->
-<title>Ejercicio 02 PHP</title>
-
-<?php
-//Incluimos el header
-require_once("./header.php");
-?>
-
-<!-- CONTENIDO -->
-<h2>Ejercicio 02 PHP</h2>
-<p>CONTROL DE ACCESO MEDIANTE HEADER CON PDO</p>
-
-<div class="respuesta" style="display: flex; flex-direction: column; align-items: flex-start;">
-
-    <?php
     /**
      * @author Alvaro Cordero Miñambres
      * @version 1.0
@@ -93,7 +68,7 @@ require_once("./header.php");
             $miDB = new PDO(DSN, USER, PASSWORD);
 
             //Mensaje pàra verificar que la conexion ha sido correcta
-            echo ('<p>CONEXION EXISTOSA</p>');
+            echo ('<p>CONEXION EXISTOSA CON LA BASE DE DATOS</p>');
 
             //Guardo en una variable los datos pasados por teclado del usuario
             $usuario = $_SERVER['PHP_AUTH_USER'];
@@ -196,13 +171,15 @@ require_once("./header.php");
     }
 
     ?>
-</div>
 
-</div>
+<?php
+//Incluimos el head
+require_once("./head.php");
+?>
 
-</main>
+<!-- TITLE -->
+<title>Ejercicio 02 PHP</title>
 
-</body>
 
 <?php
 //Importamos el footer
