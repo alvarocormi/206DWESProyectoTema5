@@ -1,7 +1,3 @@
-<?php
-//Incluimos el head
-require_once("./codigoPHP/head.php");
-?>
 
 <!-- Iconos-->
 <link rel="shortcut icon" href="../webroot/img/palma.png" type="image/x-icon" />

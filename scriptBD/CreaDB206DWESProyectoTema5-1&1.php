@@ -6,7 +6,7 @@
  * Script creadcion de la base de datos
  */
 //Incluyo las variables de la conexion
-require_once '../conf/confDB.php';
+require_once '../conf/confDBPDO.php';
 
 try {
     //Hago la conexion con la base de datos
@@ -18,9 +18,8 @@ try {
     //Consulta para eliminar las tablas
     $consulta = <<<CONSULTA
                 
-            use dbs12302430;
 
-            create table if not exists T01_Usuario(
+            create table if not exists dbs12302430.T01_Usuario(
             T01_CodUsuario varchar(8) primary key,
             T01_Password varchar(255),
             T01_DescUsuario varchar (255),
