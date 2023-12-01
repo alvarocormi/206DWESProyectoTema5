@@ -1,4 +1,7 @@
-
+<?php
+//Incluimos el head
+require_once("./codigoPHP/head.php");
+?>
 <!-- Iconos-->
 <link rel="shortcut icon" href="../webroot/img/palma.png" type="image/x-icon" />
 
@@ -68,7 +71,7 @@ require_once("./codigoPHP/header.php");
                     <a href="./mostrarCodigo/muestraScriptCreacion1&1.php" class="text-white text-decoration-none">muestra</a>
                 </td>
                 <td>
-                    <a href="./scriptBD/CreaDB207DWESProyectoTema4-1&1.php" class="text-white text-decoration-none">ejecutar</a>
+                    <a href="./scriptBD/CreaDB206DWESProyectoTema5-1&1.php" class="text-white text-decoration-none">ejecutar</a>
                 </td>
             </tr>
             <tr>
@@ -81,7 +84,7 @@ require_once("./codigoPHP/header.php");
                     <a href="./mostrarCodigo/muestraScriptBorrar1&1.php" class="text-white text-decoration-none">muestra</a>
                 </td>
                 <td>
-                    <a href="./scriptBD/BorraDB207DWESProyectoTema4-1&1.php" class="text-white text-decoration-none">ejecutar</a>
+                    <a href="./scriptBD/BorraDB206DWESProyectoTema5-1&1.php" class="text-white text-decoration-none">ejecutar</a>
                 </td>
             </tr>
             <tr>
@@ -94,7 +97,7 @@ require_once("./codigoPHP/header.php");
                     <a href="./mostrarCodigo/muestraScriptCargaInicial1&1.php" class="text-white text-decoration-none">muestra</a>
                 </td>
                 <td>
-                    <a href="./scriptBD/CargaInicialDB207DWESProyectoTema4-1&1.php" class="text-white text-decoration-none">ejecutar</a>
+                    <a href="./scriptBD/CargaInicialDB206DWESProyectoTema5-1&1.php" class="text-white text-decoration-none">ejecutar</a>
                 </td>
             </tr>
         </tbody>

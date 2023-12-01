@@ -41,28 +41,78 @@ require_once("./header.php");
  * Si no esta vacia mostramos su contenido
  * 
  */
+$key = "";
+$value = "";
+echo ("<h3>Variables Superglobales: </h3>");
+echo ("<p>Contenido de <span style='color:green'>" . '$_SERVER' . "</span> es de tipo <span>" . gettype($_SERVER) . "</span> y contiene: <br>");
+foreach ($_SERVER as $key => $value) {
+    echo "{$key} => {$value}<br>";
+}
+echo ("<p>Contenido de <span style='color:green'>" . '$GLOBALS' . "</span> es de tipo <span>" . gettype($GLOBALS) . "</span> y tiene el valor " . print_r($GLOBALS) . "</p>");
 if (isset($_SESSION)) {
-    echo ("<p style='color: black;>Contenido de <span>" . '$_SESSION' . "</span> es de tipo <span>" . gettype($_SESSION) . "</span> y tiene el valor ");
-    print_r($_SESSION);
-    //Si esta vacia muestra un mensaje mostrando que esta vacia
+    echo ("<p>Contenido de <span style='color:green'>" . '$_SESSION' . "</span> es de tipo <span>" . gettype($_SESSION) . "</span> y contiene: <br>");
+    foreach ($_SESSION as $key => $value) {
+        echo "{$key} => {$value}<br>";
+    }
 } else {
-    echo ("<p style='color: black;>Contenido de <span>" . '$_SESSION' . "</span> esta vacia.</p>");
+    echo ("<p>Contenido de <span style='color:red'>" . '$_SESSION' . "</span> esta vacia.");
+}
+echo ("</p>");
+if (empty($_COOKIE)) {
+    echo ("<p>Contenido de <span style='color:green'>" . '$_COOKIE' . "</span> es de tipo <span>" . gettype($_COOKIE) . "</span> y contiene: <br>");
+    foreach ($_COOKIE as $key => $value) {
+        echo "{$key} => {$value}<br>";
+    }
+} else {
+    echo ("<p>Contenido de <span style='color:red'>" . '$_COOKIE' . "</span> esta vacia.");
 }
 
-/**
- * @link https://www.php.net/manual/es/reserved.variables.server.php
- * 
- * Mostramos el contenido e la variable $_SERVER
- */
-echo ("<p style='color: black;'>Contenido de <span>" . '$_SERVER' . "</span> es de tipo <span>" . gettype($_SERVER) . "</span> y tiene el valor " . var_dump($_SERVER) . "</p>");
-
-/**
- * @link https://www.php.net/manual/es/reserved.variables.cookies.php
- * 
- * Mostramos el contenido de la variable $_COOKIE
- */
-echo ("<p>Contenido de <span>" . '$_COOKIE' . "</span> es de tipo <span>" . gettype($_COOKIE) . "</span> y tiene el valor " . print_r($_COOKIE) . "</p>");
-
+echo ("</p>");
+if (is_null($_GET)) {
+    echo ("<p>Contenido de <span style='color:green'>" . '$_GET' . "</span> es de tipo <span>" . gettype($_GET) . "</span> y contiene: <br>");
+    foreach ($_GET as $key => $value) {
+        echo "{$key} => {$value}<br>";
+    }
+} else {
+    echo ("<p>Contenido de <span style='color:red'>" . '$_GET' . "</span> esta vacia.");
+}
+echo ("</p>");
+if (is_null($_POST)) {
+    echo ("<p>Contenido de <span style='color:green'>" . '$_POST' . "</span> es de tipo <span>" . gettype($_POST) . "</span> y contiene: <br>");
+    foreach ($_POST as $key => $value) {
+        echo "{$key} => {$value}<br>";
+    }
+} else {
+    echo ("<p>Contenido de <span style='color:red'>" . '$_POST' . "</span> esta vacia.");
+}
+echo ("</p>");
+if (is_null($_FILES)) {
+    echo ("<p>Contenido de <span style='color:green'>" . '$_FILES' . "</span> es de tipo <span>" . gettype($_FILES) . "</span> y contiene: <br>");
+    foreach ($_FILES as $key => $value) {
+        echo "{$key} => {$value}<br>";
+    }
+} else {
+    echo ("<p>Contenido de <span style='color:red'>" . '$_FILES' . "</span> esta vacia.");
+}
+echo ("</p>");
+if (is_null($_REQUEST)) {
+    echo ("<p>Contenido de <span style='color:green'>" . '$_REQUEST' . "</span> es de tipo <span>" . gettype($_REQUEST) . "</span> y contiene: <br>");
+    foreach ($_REQUEST as $key => $value) {
+        echo "{$key} => {$value}<br>";
+    }
+} else {
+    echo ("<p>Contenido de <span style='color:red'>" . '$_REQUEST' . "</span> esta vacia.");
+}
+echo ("</p>");
+if (is_null($_ENV)) {
+    echo ("<p>Contenido de <span style='color:green'>" . '$_ENV' . "</span> es de tipo <span>" . gettype($_ENV) . "</span> y contiene: <br>");
+    foreach ($_ENV as $key => $value) {
+        echo "{$key} => {$value}<br>";
+    }
+} else {
+    echo ("<p>Contenido de <span style='color:red'>" . '$_ENV' . "</span> esta vacia.");
+}
+echo ("</p>");
 
 //Mostramos el contenido del phpinfo()
 phpinfo();
