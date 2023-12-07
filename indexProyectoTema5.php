@@ -33,19 +33,7 @@ require_once("./codigoPHP/header.php");
                 <td>
                     <a href="./mostrarCodigo/muestraConfDB.php" class="text-white text-decoration-none">muestra</a>
                 </td>
-            </tr>
-            <tr>
-                <th scope="row">Explotacion</th>
-                <td>
-                    <a href="./mostrarCodigo/muestraConfDBPDOExplotacion.php" class="text-white text-decoration-none">muestra</a>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">Casa</th>
-                <td>
-                    <a href="./mostrarCodigo/muestraConfDBPDOCasa.php" class="text-white text-decoration-none">muestra</a>
-                </td>
-            </tr>
+            </tr
         </tbody>
     </table>
 </div>
