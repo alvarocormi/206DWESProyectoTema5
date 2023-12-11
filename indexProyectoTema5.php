@@ -29,11 +29,11 @@ require_once("./codigoPHP/header.php");
         </thead>
         <tbody>
             <tr>
-                <th scope="row">Desarrollo</th>
+                <th scope="row">PDO</th>
                 <td>
                     <a href="./mostrarCodigo/muestraConfDB.php" class="text-white text-decoration-none">muestra</a>
                 </td>
-            </tr
+            </tr>
         </tbody>
     </table>
 </div>
