@@ -19,10 +19,10 @@ try {
 
     //Consulta para eliminar las tablas
     $consulta = <<<CONSULTA
-        USE dbs12302430;
                 
         DROP TABLE IF EXISTS dbs12302430.T01_Usuario;
         DROP TABLE IF EXISTS dbs12302430.T02_Departamento;
+        DROP TABLE IF EXISTS dbs12302430.T08_Pregunta;
         CONSULTA;
 
     $miDB->exec($consulta); //Ejecuto la consulta

@@ -29,6 +29,7 @@ T02_FechaCreacionDepartamento datetime,
 T02_VolumenDeNegocio float,
 T02_FechaBajaDepartamento datetime default null)engine=innodb;
 
+
 /*Creacion del usuario*/
 create user 'user206DWESProyectoTema5'@'%' identified by 'P@ssw0rd';
 grant all privileges on DB206DWESProyectoTema5.* to 'user206DWESProyectoTema5'@'%';
