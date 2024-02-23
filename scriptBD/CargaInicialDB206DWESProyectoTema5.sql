@@ -28,6 +28,5 @@ INSERT INTO T01_Usuario (
     ('antonio', SHA2('antoniopaso', 256), 'Antonio Jañez Velada', 'administrador'),
     ('alberto', SHA2('antoniopaso', 256), 'Alberto Bahillo Fernandez', 'administrador');
 
--- Insertar fila 1
 
 
